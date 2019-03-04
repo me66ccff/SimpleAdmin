@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>超级无敌小飞飞的第二次作业，你们都没我聪明，😕</title>
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $.ajax({
+                    url: "a.html", 
+                    type: "GET", 
+                    success: function (data) {
+                        $("#div1").html(data);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="div1">
+        <h2>你想知道真相吗？点击下面吧！</h2>
+    </div>
+    <button>获取真相！</button>
+
+</body>
+
+</html>
